@@ -1,4 +1,4 @@
-# Fatty-ChatGPT-Messenger
+# Fatty-Autocomleted-Blog
 
 A Funny Repo using **React(Next.js)** , css framework **Tailwindcss**, Database **MongoDB** , deploy by **Vercel**.
 
@@ -14,6 +14,8 @@ A Funny Repo using **React(Next.js)** , css framework **Tailwindcss**, Database 
 
 ```
 適逢ChatGPT熱潮，試做看看。
+
+設定文章主題及關鍵字後，openai會自動幫你生成一篇經過seo優化的文章。
 
 由於ChatGPT對中文支援不高，
 生成文章需耗時大約一分鐘，請耐心等待。

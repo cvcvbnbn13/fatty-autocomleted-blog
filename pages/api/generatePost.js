@@ -28,7 +28,7 @@ const handler = withApiAuthRequired(async (req, res) => {
     max_tokens: 3600,
     prompt: `Write a long and detailed SEO-friendly blog post about${topic} in Traditional Chinese ，針對以下用逗號分隔的關鍵字:${keywords}。
     The content should be formatted in SEO-friendly HTML.
-    請幫content進行分段。
+    Make sure the content in correct paragraphs.
     The response must also include appropriate HTML title and meta description content.
     The response format must be stringified JSON in the following format:
     {

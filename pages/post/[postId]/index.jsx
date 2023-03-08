@@ -60,6 +60,7 @@ const Post = props => {
         <div className="text-sm font-bold mt-6 p02 bg-stone-200 rounded-sm">
           文章內容
         </div>
+        <div className="mt-4 text-4xl font-bold">{props.title}</div>
         <div dangerouslySetInnerHTML={{ __html: props.postContent }} />
         <div className="my-4">
           {!showDeleteConfirm && (

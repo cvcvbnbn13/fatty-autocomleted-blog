@@ -38,7 +38,7 @@ const handler = async (req, res) => {
         const paymentIntent = event.data.object
         const auth0Id = paymentIntent.metadata.sub
 
-        const userProflie = await db.collection('users').updateOne(
+        const userProfile = await db.collection('users').updateOne(
           {
             auth0Id,
           },
@@ -50,7 +50,9 @@ const handler = async (req, res) => {
               auth0Id,
             },
           },
-          { upsert: true }
+          {
+            upsert: true,
+          }
         )
       }
       default:

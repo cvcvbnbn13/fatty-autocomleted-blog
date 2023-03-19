@@ -1,4 +1,4 @@
-import { response } from '../../lib/openaiConfig'
+import { responseData } from '../../lib/openaiConfig'
 import { getSession, withApiAuthRequired } from '@auth0/nextjs-auth0'
 import clientPromise from '../../db/mongodb'
 
@@ -49,6 +49,8 @@ const handler = withApiAuthRequired(async (req, res) => {
       },
     }
   )
+
+  const response = responseData()
 
   const parsed = JSON.parse(response.data.choices[0]?.text.split('\n').join(''))
 

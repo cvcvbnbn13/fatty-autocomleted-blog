@@ -1,8 +1,6 @@
-import { useRouter } from 'next/router'
 import React, {
   useCallback,
   useReducer,
-  useState,
   createContext,
   useContext,
 } from 'react'

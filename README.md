@@ -102,5 +102,6 @@ A Funny Repo using **React(Next.js)** , css framework **Tailwindcss**, Database 
 - micro-cors
 - mongodb
 - stripe
+- openai
 
 ---

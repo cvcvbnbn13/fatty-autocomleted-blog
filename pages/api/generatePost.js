@@ -40,6 +40,7 @@ const handler = withApiAuthRequired(async (req, res) => {
       "title": title goes here
       "metaDesc": meta description goes here
     }`,
+    stream: true,
   })
 
   await db.collection('users').updateOne(

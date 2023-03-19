@@ -1,4 +1,3 @@
-import { initialState } from './postsProvider'
 import { ADD_POST, DELETE_POST, SET_NO_MORE_POSTS } from './actions'
 
 const reducer = (state, action) => {

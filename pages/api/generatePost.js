@@ -2,10 +2,6 @@ import openai from '../../lib/openaiConfig'
 import { getSession, withApiAuthRequired } from '@auth0/nextjs-auth0'
 import clientPromise from '../../db/mongodb'
 
-export const config = {
-  runtime: 'edge',
-}
-
 const handler = withApiAuthRequired(async (req, res) => {
   const { user } = await getSession(req, res)
   const client = await clientPromise

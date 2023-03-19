@@ -50,11 +50,7 @@ const handler = withApiAuthRequired(async (req, res) => {
     }
   )
 
-  const response = responseData()
-
-  console.log(response)
-
-  const parsed = JSON.parse(response.data.choices[0]?.text.split('\n').join(''))
+  const parsed = await responseData(topic, keywords)
 
   const post = await db.collection('posts').insertOne({
     postContent: parsed?.postContent,
